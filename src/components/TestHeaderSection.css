@@ -1,0 +1,53 @@
+/* src/components/TestHeaderSection.css */
+
+.test-header-section {
+    padding: 80px 40px 50px;
+    background-color: #f7f7f7; 
+    text-align: center;
+  }
+  
+  .test-header-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #002b66; 
+    margin-bottom: 10px;
+  }
+  
+  .test-header-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 60px;
+  }
+  
+  .large-badges-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .large-badge-item img {
+    /* Placeholder image sizes (approximate scale) */
+    width: 120px; 
+    height: 80px;
+    object-fit: contain;
+    /* Applying filters to mimic the muted style in the screenshot */
+    filter: grayscale(100%); 
+    opacity: 0.7;
+  }
+  
+  /* --- Responsiveness --- */
+  @media (max-width: 768px) {
+      .test-header-title {
+          font-size: 28px;
+      }
+      .large-badges-container {
+          gap: 20px;
+      }
+      .large-badge-item img {
+          width: 100px;
+          height: 70px;
+      }
+  }

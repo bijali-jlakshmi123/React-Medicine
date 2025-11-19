@@ -1,0 +1,39 @@
+/* src/components/BadgesSection.css */
+
+.badges-container {
+  /* Crucial: Set background to transparent to blend with the hero section's yellow */
+  background-color: transparent; 
+  border-top: none; 
+  box-shadow: none;
+  
+  width: 100%;
+  padding: 20px 0; 
+  margin-top: 20px; 
+  
+  display: flex;
+  /* Align to the left to sit correctly under the text */
+  justify-content: flex-start; 
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.trust-badges-image {
+  /* Ensure the image scales correctly */
+  max-width: 90%; 
+  width: auto; 
+  height: auto;
+  display: block;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+  .badges-container {
+    padding: 15px 10px;
+    /* Center the image on small screens for better aesthetics */
+    justify-content: center; 
+  }
+  
+  .trust-badges-image {
+    max-width: 100%; 
+  }
+}

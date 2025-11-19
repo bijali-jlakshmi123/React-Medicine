@@ -1,0 +1,236 @@
+/* src/App.css */
+
+/* Global styles for the App */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background for the overall page */
+}
+
+/* Compensate for the fixed Navbar height */
+.hero-section {
+  padding-top: 70px; 
+}
+
+/* --- Hero Section Styling --- */
+
+.hero-section {
+  width: 100%;
+  min-height: 80vh; /* Adjust height as needed */
+  background-color: #ffe6aa; /* Light yellow background */
+  background-image: url('./assets/yellow-pattern.svg'); /* If there's a specific pattern, you'd link it here */
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 650px;
+  padding-top: 20px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* --- Info List Styling --- */
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.info-list li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px; /* Space for the custom bullet point */
+}
+
+/* Custom bullet point (you might use an image/icon here in a real site) */
+.info-list li::before {
+  content: '•'; 
+  color: #006eff; /* Blue color for the bullet */
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+}
+
+.info-list strong {
+  font-weight: 700;
+}
+
+/* --- Action Buttons Styling --- */
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.explore-btn, .book-btn {
+  border: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.explore-btn {
+  background: #006eff; /* Primary blue button */
+  color: white;
+}
+
+.explore-btn:hover {
+  background: #0053c7;
+}
+
+.book-btn {
+  background: white; /* White button with blue border */
+  color: #006eff;
+  border: 2px solid #006eff;
+}
+
+.book-btn:hover {
+  background: #f0f0f0;
+  color: #0053c7;
+  border-color: #0053c7;
+}
+
+/* --- Image Placeholder Styling --- */
+
+/* src/App.css (Replace the old placeholder styles with these) */
+
+/* --- Image Container Styling --- */
+
+.hero-image-container {
+  /* Dimensions match the old placeholder, but holds the image */
+  width: 350px;
+  height: 450px; 
+  position: relative;
+  overflow: hidden; /* Ensures the image stays within the container */
+  border-radius: 10px;
+  /* You can optionally keep the light yellow background if you want a border effect */
+  background-color: #fce28b; 
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  display: block;
+}
+
+/* --- Responsive Adjustments for Image --- */
+
+@media (max-width: 1024px) {
+  .hero-image-container {
+    width: 300px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-image-container {
+    width: 90%;
+    max-width: 300px; 
+    height: 300px;
+  }
+}
+/* src/App.css (Append these styles) */
+
+/* --- Floating Chat Widget Styling --- */
+
+.chat-widget {
+  position: fixed; /* Fixes the button relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right of the screen */
+  background: #006eff; /* Primary blue color */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px; /* Highly rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it floats above all other content */
+}
+
+.chat-widget:hover {
+  background: #0053c7;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustment for the widget */
+@media (max-width: 600px) {
+  .chat-widget {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* --- Footer Badges Placeholder Styling --- */
+
+.footer-badges {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid #eee;
+  /* You would put the actual images/icons for 'NHS', 'UK', etc. here */
+  font-size: 14px;
+  color: #888;
+}
+/* --- Styles for the Up Arrow Feature Demo/Indicator --- */
+/* The main content structure (hero, sections, footer) will provide the necessary height */
+
+.bottom-indicator {
+  padding: 30px;
+  background-color: #e0f7fa; /* Light blue background */
+  border-top: 3px solid #00bcd4; /* Accent color */
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  margin-top: 40px;
+}
+
+.bottom-indicator strong {
+    font-weight: 700;
+    color: #e91e63; /* Pink accent */
+}
+
+/* Add some basic styles for the Hero Section to make sure it looks decent */
+.hero-section {
+    min-height: 80vh;
+    background-color: #fff8e1; /* Light yellow background */
+    padding: 60px 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Add other component styles here as needed to make the page look complete */

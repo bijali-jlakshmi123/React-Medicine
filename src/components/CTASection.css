@@ -1,0 +1,99 @@
+/* src/components/CTASection.css */
+
+.cta-section {
+    padding: 80px 40px;
+    background-color: #f7f7f7; /* Light gray background */
+    text-align: center;
+  }
+  
+  .cta-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #002b66; /* Dark blue */
+    margin-bottom: 50px;
+  }
+  
+  .cta-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .cta-card {
+    flex: 1;
+    max-width: 480px;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Card specific background colors */
+  .card-specialist {
+      background-color: #f0f8ff; /* Light blue */
+  }
+  
+  .card-tests-order {
+      background-color: #fff8e1; /* Light yellow/cream */
+  }
+  
+  .card-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #002b66;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    width: auto;
+    align-self: flex-start; /* Align button to the left */
+    border: none;
+    font-size: 16px;
+  }
+  
+  .specialist-btn {
+    background-color: #006eff; /* Primary blue */
+    color: white;
+  }
+  
+  .specialist-btn:hover {
+    background-color: #0053c7;
+  }
+  
+  .test-btn {
+    background-color: #ffaa00; /* Gold/Orange accent */
+    color: #002b66; /* Dark blue text */
+  }
+  
+  .test-btn:hover {
+    background-color: #e59400;
+  }
+  
+  /* --- Responsiveness --- */
+  @media (max-width: 900px) {
+    .cta-cards-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .cta-card {
+      max-width: 100%;
+    }
+  }

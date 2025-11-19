@@ -1,0 +1,110 @@
+.how-it-works-section {
+    padding: 80px 40px;
+    background-color: #ffffff; /* White background */
+    text-align: center;
+}
+
+.how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.how-it-works-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #333; /* Dark text */
+    margin-bottom: 10px;
+}
+
+.how-it-works-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.step-card {
+    flex: 1;
+    background: #f8f8f8; /* Very light gray background */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: left;
+    transition: box-shadow 0.3s, transform 0.3s;
+    min-height: 350px; /* Ensure uniform height for desktop */
+    display: flex;
+    flex-direction: column;
+}
+
+.step-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.step-number-container {
+    width: 50px;
+    height: 50px;
+    background-color: #0073ff; /* Primary blue for the circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 115, 255, 0.3);
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.step-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0056b3; /* Darker blue title */
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.step-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .step-card {
+        min-height: 380px; /* Slight adjustment for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .how-it-works-section {
+        padding: 50px 20px;
+    }
+
+    .how-it-works-title {
+        font-size: 30px;
+    }
+
+    .steps-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .step-card {
+        min-height: auto; /* Allow height to adjust naturally on mobile */
+        text-align: center;
+    }
+
+    .step-number-container {
+        margin: 0 auto 20px auto; /* Center the number container on mobile */
+    }
+}

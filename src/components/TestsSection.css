@@ -1,0 +1,98 @@
+/* src/components/TestsSection.css (Refactored for 3 Cards) */
+
+.services-section {
+    padding: 80px 40px 0; /* Padding top, less padding bottom as the next section starts immediately */
+    background-color: #ffffff; 
+    text-align: center;
+  }
+  
+  .service-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    text-align: center;
+    border: 1px solid #eee;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Background colors to match the subtle tints in the screenshot */
+  .card-consultation {
+      background-color: #fff0f5; /* Light Pink */
+      border-color: #f7d9e2;
+  }
+  
+  .card-tests {
+      background-color: #f0fff0; /* Light Mint Green */
+      border-color: #d9f7d9;
+  }
+  
+  .card-clinic {
+      background-color: #f0f8ff; /* Light Azure Blue */
+      border-color: #d9e7f7;
+  }
+  
+  .service-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #555;
+    min-height: 48px; /* Ensures consistent card height regardless of text length */
+    margin-bottom: 30px;
+  }
+  
+  .card-btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+  }
+  
+  .primary-btn-dark {
+    background: #002b66; /* Dark Blue */
+    color: white;
+    border: none;
+  }
+  
+  .primary-btn-dark:hover {
+    background: #001f4c;
+  }
+  
+  .secondary-btn-dark {
+    background: #28a745; /* Green */
+    color: white;
+    border: none;
+  }
+  
+  .secondary-btn-dark:hover {
+    background: #1e7e34;
+  }
+  
+  /* --- Responsiveness --- */
+  @media (max-width: 768px) {
+    .services-section {
+      padding: 60px 20px 0;
+    }
+  }

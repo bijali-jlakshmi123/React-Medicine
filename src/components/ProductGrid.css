@@ -1,0 +1,131 @@
+/* src/components/ProductGrid.css */
+
+.product-grid-section {
+    padding: 60px 40px;
+    background-color: #ffffff; /* White background for the grid */
+}
+
+.product-grid-container {
+    display: grid;
+    /* 4 columns on desktop, adapts down */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #f7f7f7; /* Light grey card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+    height: 100%; /* Ensure uniform height */
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+    width: 100%;
+    height: 120px; /* Fixed height for image area */
+    margin-bottom: 15px;
+    background-color: #e0eaf3; /* Light blue box background from screenshot */
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #002b66;
+    min-height: 48px; /* For two lines of text */
+    margin-bottom: 15px;
+}
+
+/* --- Features Section --- */
+.product-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 5px 10px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+}
+
+.feature-icon {
+    margin-right: 5px;
+    color: #28a745; /* Green checkmark */
+}
+
+/* --- Price Block --- */
+.price-block {
+    margin-top: auto; /* Pushes the price and button to the bottom */
+    margin-bottom: 20px;
+}
+
+.old-price {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.current-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #002b66; /* Dark Blue */
+}
+
+.buy-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: #006eff; /* Primary Blue */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 180px;
+}
+
+.buy-btn:hover {
+    background-color: #0053c7;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 600px) {
+    .product-grid-container {
+        grid-template-columns: 1fr; /* Single column on smallest screens */
+    }
+    .product-name {
+        font-size: 16px;
+    }
+}

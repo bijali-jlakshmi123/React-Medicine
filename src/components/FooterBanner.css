@@ -1,0 +1,38 @@
+/* src/components/FooterBanner.css */
+
+.footer-banner {
+    /* Same dark blue as the ExpertiseBanner for consistency */
+    background-color: #002b66; 
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .banner-content-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+  
+  .separator {
+      color: #ffaa00; /* Orange/Gold separator */
+      font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+      .footer-banner {
+          font-size: 14px;
+          padding: 10px 20px;
+      }
+      .banner-content-footer {
+          flex-direction: column;
+          gap: 5px;
+      }
+      .separator {
+          display: none;
+      }
+  }
