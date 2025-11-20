@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { FaUser, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -9,11 +10,11 @@ export default function Navbar() {
         <div className="logo">GI<span>Cognition</span></div>
 
         <ul className="nav-links">
-          <li>Home</li>
-          <li>Know Your Gut</li>
-          <li>Tests</li>
-          <li>How It Works</li>
-          <li>About Us</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/SymptomsSection">Know Your Gut</Link></li>
+          <li><Link to="/TestHeaderSection">Tests</Link></li>
+          <li><Link to="/HowItWorksSection">How It Works</Link></li>
+          <li><Link to="/AboutSection">About us</Link></li>
         </ul>
       </div>
 
